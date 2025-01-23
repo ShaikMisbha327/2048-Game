@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?size=626&ext=jpg&ga=GA1.1.2052779966.1725267356&semt=ais_hybrid');
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: #111111;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2px;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    color: #102183;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    border-color: rgb(228, 44, 90);
+}
+
+p {
+    color: black;
+    font-size: 25px;
+    margin: auto;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.score-panel {
+    background-color: #102183;
+    color: white;
+    padding: 1px 35px;
+    border-radius: 3px;
+    font-size: 18px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.new-game:hover {
+    background-color: #9e8b75;
+}
+
+.game-container {
+    width: 460px;
+    height: 460px;
+    margin: 0 auto;
+    background-color: #bbada0;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #3b0a45 0%, #6a0f4e 100%);
+}
+
+.tile {
+    background-color: #cdc1b4;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    height: 100px;
+    width: 100px;
+}
+
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.score, .best-score {
+    color: white;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#new-game {
+    background-color: hwb(311 5% 38%);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    background-color: #bbada0;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: #cdc1b4;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #776e65;
+    border-radius: 3px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.tile[data-value="2"] { background-color: #9034b8; color: #e5ede4; }
+.tile[data-value="4"] { background-color: #f655d8; color: #5c534b; }
+.tile[data-value="8"] { background-color: #6de969; color: #f9f6f2; }
+.tile[data-value="16"] { background-color: #f59563; color: #f9f6f2; }
+.tile[data-value="32"] { background-color: #32baaf; color: #f9f6f2; }
+.tile[data-value="64"] { background-color: #f6e761; color: #595550; }
+.tile[data-value="128"] { background-color: #694f02; color: #f9f6f2; }
+.tile[data-value="256"] { background-color: #5165e9; color: #f9f6f2; }
+.tile[data-value="512"] { background-color: #e25394; color: #f9f6f2; }
+.tile[data-value="1024"] { background-color: #4f0228; color: #f9f6f2; }
+.tile[data-value="2048"] { background-color: #1a5203; color: #f9f6f2; }
+
+.how-to-play {
+    color: rgb(21, 21, 105);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.instructions {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #776e65;
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+footer {
+    font-size: 22px;
+    margin-top: 2px;
+}  

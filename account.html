@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<title>Account</title>
+<style>
+  body{
+    background-image: url("https://img.freepik.com/free-vector/gradient-background-vector-spring-colors_53876-117271.jpg?size=626&ext=jpg&ga=GA1.1.2052779966.1725267356&semt=ais_hybrid");
+    background-size: cover;
+  }
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-top: 20px;
+}
+
+h2{
+    color:rgb(200, 62, 200);
+    font-size: 50px;
+    font-weight: bolder;
+}
+.sec1{
+background-color:rgb(11, 73, 94);
+padding: 20px 50px;
+text-align: left;
+color: white;
+font-size: 50px;
+font-weight: bolder;
+width:100%;
+
+}
+.sec2{
+background-color: rgb(170, 182, 193);
+padding: 20px 50px;
+width:100%;
+text-align: left;
+font-size: 25px;
+}
+label{
+display: inline-block;
+width: 120px;
+line-height: 30px;
+}
+
+input{
+border:none;
+
+border-bottom: 2px solid black;
+padding: 8px 20px;
+}
+
+.sec3{
+background-color: rgb(170, 182, 193);
+padding: 5px 50px;
+width:100%;
+text-align: left;
+font-size: 25px;
+margin-top: 2px;
+}
+/*.sec3{
+    padding: 2opx 50px;
+    margin-top: 2px;
+}*/
+.sec3 .forgot{
+display: flex;
+justify-content: space-between;
+background-color: rgb(170, 182, 193);
+width: 100%;
+box-sizing: border-box;
+}
+
+.sec4{
+margin-top: 20px;
+font-size: 25px;
+
+}
+
+button {
+  background-color: rgb(165, 171, 176);
+  color: rgb(9, 9, 9);
+  padding: 5px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom:2px solid black;
+}
+
+button:hover {
+  background-color: #7e7171;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h4 {
+  color: black;
+  margin: 5px;
+}
+.b{
+    font-style: italic;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+<main>
+<h2>2048.org</h2>
+<article>
+<section class="sec1">Sign In</section>
+<section class="sec2">
+<p class="b">Please enter your username and password in the fields below.</p> 
+<div>
+<div class="user">
+<label for="username">User Name</label>
+<input type="text" name="" id="username" required>
+</div>
+<br>
+<div class="pass">
+<label for="password">Password </label>
+<input type="password" name="" id="password" required>
+
+</div>
+</div>
+</section>
+<section class="sec3">
+<div class="forgot">
+<a href="forgot.html">Forgot Password?</a>
+<button id="btn">SignIn</button>
+</div>
+<br>
+<p class="b"> Don't have an account? <a href="membership.html">Get a membership </a>to create one.
+</p>
+</section> 
+</article>
+<section class="sec4">
+<h4>Contact: support@beetux.com</h4>
+<h4>©2024 - 2048.org (operated by Beetux Software) - <a href="https://www.2048.org/privacy/">Privacy Policy</a></h4>
+</section>
+</main>
+
+</body>
+</html>
